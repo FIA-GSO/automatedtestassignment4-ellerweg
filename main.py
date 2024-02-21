@@ -29,12 +29,25 @@ def compute_r2d2_population(steps: int) -> tuple[int,int,int]:
 def heron_verfahren(area : float, threshold:float) -> float:
     """
         computes the square root using the heron method
-    :param area: size of the area e.g.25
-    :param threshold: threshold for the heron method e.g. 0.01
+    :param flaeche: size of the area
+    :param abweichung_grenze: threshold for the heron method
     :return:the square root of the given area according to the heron method
     """
+    a=area
+    b=1.0
+    abweichung_ok = True
+    print(" %-20s | %-20s | %20s | %20s" % ("Länge a", "Länge b", "Mittelwert","Abweichung"))
+    while(abweichung_ok):
+        mittelwert = (a + b) / 2
+        abweichung = abs(a-b)
+        print(" %-20s | %-20s | %20s | %20s" % (a, b, mittelwert, abweichung))
 
-    return 0
+        if(abweichung <= threshold):
+            abweichung_ok = False
+        else:
+            a = mittelwert
+            b = area / a
+    return a
 
 
 #---------------------Aufgabe 4 Quersumme------------------------------
