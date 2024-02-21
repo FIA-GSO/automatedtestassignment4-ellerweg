@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13963661&assignment_repo_type=AssignmentRepo)
 # lf5-ls3-exercise
 Contains the exercises of lf5\ls3 (Makler) such as r2d2, heron and alike
 
